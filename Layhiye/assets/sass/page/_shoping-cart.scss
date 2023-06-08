@@ -1,0 +1,25 @@
+#shoping-cart {
+    .container {
+        .bread-crump {
+            padding-top: 30px;
+            padding-bottom: 50px;
+
+            .home-link {
+                transition: all 0.4s;
+                font-size: 12px;
+                line-height: 1.833333;
+                color: #555;
+
+                &:hover {
+                    color: #007bff;
+                }
+            }
+
+            .bread-crump-item {
+                font-size: 12px;
+                line-height: 1.833333;
+                color: #999;
+            }
+        }
+    }
+}
