@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>basket</title>
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,13 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-
+    <style>
+        .basket_item {
+            display: flex;
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -139,31 +145,51 @@
         </div>
     </header>
     <main>
-        <section id="ProductOverview">
+        <section id="basket">
             <div class="container">
-                <!-- <div class="product-head">
-                <h3 class="product-head-text">
-                    Product Overview
-                </h3>
-            </div> -->
-                <div class="product-filter">
-                    <div class="product-filter-left">
-                        <button class="product-filter-left-btn how-active">All Products</button>
-                        <button class="product-filter-left-btn">Women</button>
-                        <button class="product-filter-left-btn">Men</button>
-                        <button class="product-filter-left-btn">Bag</button>
-                        <button class="product-filter-left-btn">Shoes</button>
-                        <button class="product-filter-left-btn">Watches</button>
-                    </div>
+                <div class="wrap_table_shopping_cart">
+                    <table class="table_shopping_cart">
+                        <thead>
+                            <tr class="table_head">
+                                <th class="column-1">Product Photo</th>
+                                <th>Product Name</th>
+                                <th class="column-2">Price</th>
+                                <th class="column-3">Quantity</th>
+                                <th class="column-4">Total</th>
+                                <th>Delet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr class="table_row">
+                                <td class="product_photo">
+                                    <img class="photo" src="https://preview.colorlib.com/theme/cozastore/images/product-01.jpg"
+                                        alt="">
+                                </td>
+                                <td class="product_name">Fresh Strawberries</td>
+                                <td class="product_price">36.34</td>
+                                <td class="product_quantity">
+                                    <div class="quantity_content">
+                                        <button class="inc">+</button>
+                                        <p class="product_number">0</p>
+                                        <button class="dec">-</button>
+                                    </div>
+                                </td>
+                                <td class="product_total">
+                                    0
+                                </td>
+                                <td class="product_delet">
+                                    <button class="delete_btn">X</button>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
                 </div>
-
-                <div class="productAllCart row"></div>
-
-                <div class="loadMoreBtn flex-center">
-                    <a href="" class="loadMoreBtnLink flex-center">Load More</a>
+                <div class="cart_totals">
+                    <h3>Cart Totals:</h3>
+                    <p class="totals">0</p>
+                    <button class="order">CONFRIM ORDER</button>
                 </div>
             </div>
-
         </section>
     </main>
     <footer>
@@ -258,11 +284,10 @@
             </div>
         </div>
     </footer>
+    <script src="./assets/js/_hamburger.js"></script>
 
-    <script src="./assets/js/_home.js">
-
-    </script>
-     <script src="./assets/js/_hamburger.js"></script>
+    <script src="./assets/js/_basket.js"></script>
 </body>
+
 
 </html>

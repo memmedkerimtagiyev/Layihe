@@ -32,13 +32,14 @@
                 </div>
             </div>
         </div>
-        <nav>
+        <nav class="jst-cont">
             <div class="container jst-cont">
                 <div class="nav-left jst-cont">
                     <a href="#" class="logo">
                         <img src="https://preview.colorlib.com/theme/cozastore/images/icons/logo-01.png"
                             alt="IMG-LOGO" />
                     </a>
+
                     <div class="menu-desktop">
                         <ul class="main-menu">
                             <li class="active-menu">
@@ -72,17 +73,69 @@
                     <div class="icon-header-item">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <div class="icon-header-item">
+                    <a href="./basket.html" class="icon-header-item">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <div class="shopping-number">2</div>
-                    </div>
-                    <a href="#" class="icon-header-item">
+                    </a>
+                    <a href="./wishlist.html" target="_blank" class="icon-header-item">
                         <i class="fa-regular fa-heart"></i>
                         <div class="heart-number">0</div>
                     </a>
                 </div>
+
+                <button class="hamburger hamburger--emphatic" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
         </nav>
+        <div class="mobile-nav-list">
+            <div class="top-bar-mobile">
+                <div class="content-topbar container">
+                    <div class="left-top-bar">
+                        Free shipping for standard order over $100
+                    </div>
+                    <div class="right-top-bar">
+                        <a href="#" class=""> Help &amp; FAQs </a>
+                        <a href="#" class=""> My Account </a>
+                        <a href="#" class=""> EN </a>
+                        <a href="#" class=""> USD </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-mobile">
+                <div class="menu-desktop">
+                    <ul class="main-menu">
+                        <li class="active-menu">
+                            <a href="home.html">Home</a>
+                            <i class="fa-solid down fa-chevron-down"></i>
+                            <ul class="sub-menu-mobile">
+                                <li><a href="">Homepage 1</a></li>
+                                <li><a href="">Homepage 2</a></li>
+                                <li><a href="">Homepage 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="product.html">Shop</a>
+                        </li>
+                        <li class="label1" data-label1="hot">
+                            <a href="shoping-cart.html">Features</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
 
@@ -90,9 +143,12 @@
 
         <section id="slide">
             <div class="your-class">
-                <div><img src="https://preview.colorlib.com/theme/cozastore/images/slide-02.jpg.webp" alt=""></div>
-                <div><img src="	https://preview.colorlib.com/theme/cozastore/images/slide-03.jpg" alt=""></div>
-                <div><img src="	https://preview.colorlib.com/theme/cozastore/images/slide-01.jpg" alt=""></div>
+                <div class="slide-photo"><img
+                        src="https://preview.colorlib.com/theme/cozastore/images/slide-02.jpg.webp" alt=""></div>
+                <div class="slide-photo"><img src="	https://preview.colorlib.com/theme/cozastore/images/slide-03.jpg"
+                        alt=""></div>
+                <div class="slide-photo"><img src="	https://preview.colorlib.com/theme/cozastore/images/slide-01.jpg"
+                        alt=""></div>
             </div>
         </section>
         <section id="banner">
@@ -166,8 +222,8 @@
                 <div class="product-filter">
                     <div class="product-filter-left">
                         <button class="product-filter-left-btn how-active">All Products</button>
-                        <button class="product-filter-left-btn">Women</button>
-                        <button class="product-filter-left-btn">Men</button>
+                        <button class="product-filter-left-btn women-btn">Women</button>
+                        <button class="product-filter-left-btn men-btn">Men</button>
                         <button class="product-filter-left-btn">Bag</button>
                         <button class="product-filter-left-btn">Shoes</button>
                         <button class="product-filter-left-btn">Watches</button>
@@ -191,18 +247,21 @@
                                     </span>
                                 </div>
                                 <div class="block2-txt-child2">
-                                    <a href="" class="block2-txt-child2-heart-price">
+                                    <button class="blocktextChild2Shopping">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                    <button class="block2-txt-child2-heart-price">
                                         <i class="fa-solid fa-heart"></i>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div> -->
-            </div>
-              <div class="loadMoreBtn flex-center">
+                </div>
+                <div class="loadMoreBtn flex-center">
                     <a href="" class="loadMoreBtnLink flex-center">Load More</a>
                 </div>
-
+            </div>
         </section>
 
     </main>
@@ -305,6 +364,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/js/_home.js"></script>
+    <script src="./assets/js/_hamburger.js"></script>
+
 </body>
 
 

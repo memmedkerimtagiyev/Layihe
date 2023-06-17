@@ -1,29 +1,8 @@
 const productAllCart = document.querySelector(".productAllCart");
-let basketArr = [];
 let wishlistArr = [];
+wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
 
-function getAll() {
-  fetch("http://localhost:3000/posts")
-    .then((res) => res.json())
-    .then((data) => {
-      data.forEach((element) => {
-        createCart(element);
-      });
-    });
-
-  window.onload = function () {
-    if (localStorage.getItem("basket") !== null) {
-      basketArr = JSON.parse(localStorage.getItem("basket"));
-    }
-    if (localStorage.getItem("wishlist") !== null) {
-      wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
-    }
-  };
-}
-
-function createCart(element) {
-  const productAllCart = document.querySelector(".productAllCart");
-
+wishlistArr.forEach((element) => {
   const productCart = document.createElement("div");
   const block2 = document.createElement("div");
   const block2pic = document.createElement("div");
@@ -65,61 +44,12 @@ function createCart(element) {
   if (wishlistArr.find((x) => x.id == element.id) !== undefined) {
     wishlistBtn.style.color = "red";
   }
-  // basket
-  basketBtn.onclick = function () {
-    //eger bu idli elemnent yoxdursa push et
-    if (basketArr.find((x) => x.id == element.id) === undefined) {
-      basketArr.push({ ...element, count: 1 });
-    }
-    localStorage.setItem("basket", JSON.stringify(basketArr));
-    console.table(basketArr);
-  };
-
-  // wishlist
 
   wishlistBtn.onclick = () => {
-    if (wishlistArr.find((x) => x.id == element.id) === undefined) {
-      wishlistArr.push(element);
-      wishlistBtn.style.color = "red";
-    } else {
-      wishlistArr = wishlistArr.filter((x) => x.id !== element.id);
-      wishlistBtn.style.color = "#666";
-    }
+    console.log(element.id);
+    wishlistArr = wishlistArr.filter((x) => x.id !== element.id);
     localStorage.setItem("wishlist", JSON.stringify(wishlistArr));
+    wishlistBtn.parentElement.parentElement.parentElement.remove();
   };
-}
 
-getAll();
-$(".your-class").slick();
-
-// woman yaradiriq
-const women = document.querySelector(".women-btn");
-const men = document.querySelector(".men-btn");
-
-women.addEventListener("click", function () {
-  console.log("salam");
-
-  fetch("http://localhost:3000/posts")
-    .then((res) => res.json())
-    .then((data) => {
-      productAllCart.innerHTML = "";
-      data.forEach((element) => {
-        if (element.gender == "women") {
-          createCart(element);
-        }
-      });
-    });
-});
-
-men.addEventListener("click", function () {
-  fetch("http://localhost:3000/posts")
-    .then((res) => res.json())
-    .then((data) => {
-      productAllCart.innerHTML = "";
-      data.forEach((element) => {
-        if (element.gender == "men") {
-          createCart(element);
-        }
-      });
-    });
 });

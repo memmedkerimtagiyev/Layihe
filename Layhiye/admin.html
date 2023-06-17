@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin</title>
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="top-bar">
             <div class="content-topbar container jst-cont">
@@ -138,34 +139,33 @@
             </div>
         </div>
     </header>
+
     <main>
-        <section id="ProductOverview">
-            <div class="container">
-                <!-- <div class="product-head">
-                <h3 class="product-head-text">
-                    Product Overview
-                </h3>
-            </div> -->
-                <div class="product-filter">
-                    <div class="product-filter-left">
-                        <button class="product-filter-left-btn how-active">All Products</button>
-                        <button class="product-filter-left-btn">Women</button>
-                        <button class="product-filter-left-btn">Men</button>
-                        <button class="product-filter-left-btn">Bag</button>
-                        <button class="product-filter-left-btn">Shoes</button>
-                        <button class="product-filter-left-btn">Watches</button>
-                    </div>
-                </div>
+        <h2 class="container">Product All</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Product Photo</th>
+                <th>Gender</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Edit</th>
+                <th>Product Delete</th>
+            </tr>
+        </table>
 
-                <div class="productAllCart row"></div>
-
-                <div class="loadMoreBtn flex-center">
-                    <a href="" class="loadMoreBtnLink flex-center">Load More</a>
-                </div>
-            </div>
-
+        <section class="AddProductSection">
+            <h3 class="container">Product Add</h3>
+            <form action="">
+                <input class="photo" placeholder="Photo" type="text">
+                <input class="gender" placeholder="Gender" type="text">
+                <input class="productName" placeholder="Product Name" type="text">
+                <input class="productPrice" placeholder="Product Price" type="text">
+                <button class="addBtn">Add</button>
+            </form>
         </section>
     </main>
+
     <footer>
         <div class="container">
             <div class="footerAllCart row">
@@ -259,10 +259,9 @@
         </div>
     </footer>
 
-    <script src="./assets/js/_home.js">
-
-    </script>
-     <script src="./assets/js/_hamburger.js"></script>
+    <script src="./assets/js/_hamburger.js"></script>
+    <script src="./assets/js/_home.js"></script>
+    <script src="./assets/js/_admin.js"></script>
 </body>
 
 </html>

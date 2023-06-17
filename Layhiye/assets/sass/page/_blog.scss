@@ -5,10 +5,113 @@
   background-repeat: no-repeat;
   width: 100%;
   padding: 95px 15px;
+
   h2 {
     height: 100%;
     font-size: 50px;
     line-height: 1.1;
     color: #fff;
+  }
+}
+
+#blog-content {
+  padding: 60px 30px;
+
+  .container {
+
+    .row {
+      .blog-content-left {
+        padding-bottom: 80px;
+
+        .blog {
+          padding-bottom: 63px;
+
+          a {
+            overflow: hidden;
+            display: block;
+            position: relative;
+
+            img {
+              width: 100%;
+            }
+
+            .blog-date {
+              flex-direction: column;
+              position: absolute;
+              top: 15px;
+              left: 10px;
+              background-color: rgba(255, 255, 255, 0.9);
+              width: 70px;
+              min-height: 70px;
+
+              .day {
+                font-size: 30px;
+                line-height: 1.1;
+                font-weight: 600;
+                color: #333;
+                text-align: center;
+              }
+
+              .year {
+                font-size: 12px;
+                line-height: 1.833333;
+                color: #666;
+                text-align: center;
+              }
+            }
+          }
+
+          .blog-text {
+            padding-top: 32px;
+
+            h4 {
+              font-family: inherit;
+              font-size: 30px;
+              font-weight: 700;
+              line-height: 1.1;
+              color: inherit;
+              padding-bottom: 15px;
+              transition: all 0.4s;
+              &:hover{
+                color: #717fe0;
+              }
+            }
+
+            p {
+              font-size: 15px;
+              line-height: 1.666667;
+              color: #888;
+            }
+
+            .blog-text-footer {
+              padding-top: 18px;
+
+              span {
+                font-size: 13px;
+                line-height: 1.6923;
+                color: #333;
+              }
+
+              a {
+                display: block;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 1.466667;
+                text-transform: uppercase;
+                color: #333;
+                transition: all 0.4s;
+                margin-top: 10px;
+                &:hover{
+                  color: #717fe0;
+                }
+                i{
+                  margin-left: 9px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

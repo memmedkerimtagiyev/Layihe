@@ -1,0 +1,73 @@
+#about-head {
+    background-image: url("	https://preview.colorlib.com/theme/cozastore/images/bg-01.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 95px 15px;
+
+    h2 {
+        height: 100%;
+        font-size: 50px;
+        line-height: 1.1;
+        color: #fff;
+    }
+}
+
+#our-about {
+    padding: 75px 30px 120px 30px;
+
+    .container {
+        .row {
+            padding-bottom: 148px;
+
+            .our-text {
+                max-width: 66.666667%;
+                width: 100%;
+                padding-right: 85px;
+                h3 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    color: #333;
+                    padding-bottom: 16px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 1.7857;
+                    padding-bottom: 26px;
+                    color: #888;
+                }
+
+            }
+            .our-img{
+                max-width: 33.333333%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    #our-about{
+        .container{
+            .row{
+                flex-direction: column;
+                align-items: center;
+                .our-text{
+                    padding: 0;
+                    max-width: 100%;
+                }
+                .our-img{
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+    
+}

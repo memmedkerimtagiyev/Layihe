@@ -1,10 +1,10 @@
 .container {
-    max-width: 1200px;
+    max-width: 1500px;
     width: 100%;
     margin: 0 auto;
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
@@ -21,6 +21,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#slide {
+    .your-class {
+        button {
+            display: none !important;
+        }
+    }
 }
 
 #banner {
@@ -177,7 +185,7 @@
 
                             .block2-txt-child1-link {
                                 color: #999;
-                                font-size: 14px;
+                                font-size: 18px;
                                 line-height: 1.466667;
                                 margin-top: 10px;
 
@@ -187,7 +195,7 @@
                             }
 
                             .block2-txt-child1-price {
-                                font-size: 14px;
+                                font-size: 16px;
                                 line-height: 1.466667;
                                 letter-spacing: 1px;
                                 color: #666;
@@ -195,16 +203,35 @@
                         }
 
                         .block2-txt-child2 {
-                            .block2-txt-child2-heart-price {
-                                i {
-                                    color: #666;
-                                    transition: all 0.4s;
 
-                                    &:hover {
-                                        color: #717fe0;
-                                    }
+
+                            .basketBtn {
+                                display: inline-block;
+                                padding: 10px;
+                                color: #666;
+                                transition: all 0.4s;
+                                font-size: 25px;
+
+                                &:hover {
+                                    color: #717fe0;
                                 }
                             }
+
+
+
+
+                            .wishlistBtn {
+                                display: inline-block;
+                                padding: 10px;
+                                color: #666;
+                                transition: all 0.4s;
+                                font-size: 25px;
+
+                                &:hover {
+                                    color: red;
+                                }
+                            }
+
                         }
                     }
                 }
@@ -213,6 +240,7 @@
 
         .loadMoreBtn {
             margin-bottom: 100px;
+
             .loadMoreBtnLink {
                 border-radius: 23px;
                 background-color: #e6e6e6;
@@ -224,8 +252,8 @@
                 text-transform: uppercase;
                 font-weight: 600;
                 transition: all 0.4s;
-                
-                &:hover{
+
+                &:hover {
                     background-color: black;
                     color: white;
                 }

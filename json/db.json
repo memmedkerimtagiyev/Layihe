@@ -1,89 +1,74 @@
 {
   "posts": [
     {
-      "id": 1,
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-16.jpg",
-      "name": "Square Neck Back",
-      "price": "18.49$"
-    },
-    {
       "id": 2,
+      "gender": "women",
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-01.jpg",
       "name": "Esprit Ruffle Shirt",
-      "price": "18.49$"
+      "price": "16.64"
     },
     {
       "id": 3,
+      "gender": "women",
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-02.jpg",
-      "name": "Esprit Ruffle Shirt",
-      "price": "18.49$"
+      "name": "Herschel supply",
+      "price": "35.31"
     },
     {
       "id": 4,
+      "gender": "men",
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-03.jpg",
-      "name": "Esprit Ruffle Shirt",
-      "price": "18.49$"
+      "name": "Only Check Trouser",
+      "price": "25.50"
     },
     {
       "id": 5,
+      "gender": "women",
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-04.jpg",
-      "name": "Esprit Ruffle Shirt",
-      "price": "18.49$"
+      "name": "Classic Trench Coat",
+      "price": "75.00"
     },
     {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-05.jpg",
-      "price": "18.49$",
-      "name": "Esprit Ruffle Shirt",
+      "price": "20",
+      "gender": "women",
+      "name": "Front Pocket Jumper",
+      "id": 6
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-03.jpg",
+      "price": "12.00",
+      "gender": "men",
+      "name": "Only Check Trouser",
+      "id": 9
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-11.jpg",
+      "price": "63.16",
+      "gender": "men",
+      "name": "Herschel supply",
+      "id": 10
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-12.jpg",
+      "price": "63.00",
+      "gender": "men",
+      "name": "Herschel supply",
       "id": 11
     },
     {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-06.jpg",
-      "price": "18.49$",
-      "name": "Esprit Ruffle Shirt",
+      "price": "25.00",
+      "gender": "",
+      "name": "Vintage Inspired Classic",
       "id": 12
     },
     {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-07.jpg",
-      "price": "18.49$",
-      "name": "Esprit Ruffle Shirt",
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-16.jpg",
+      "price": "18.49",
+      "gender": "women",
+      "name": "Square Neck Back",
       "id": 13
-    },
-    {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-08.jpg",
-      "price": "18.49$",
-      "name": "Esprit Ruffle Shirt",
-      "id": 14
-    },
-    {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-13.jpg",
-      "price": "18.49$",
-      "name": "Esprit Ruffle Shirt",
-      "id": 15
-    },
-    {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-09.jpg",
-      "price": "18.49$",
-      "name": "Esprit Ruffle Shirt",
-      "id": 16
-    },
-    {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-10.jpg",
-      "price": "18.49$",
-      "name": "Esprit Ruffle Shirt",
-      "id": 17
-    },
-    {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-11.jpg",
-      "price": "18.49$",
-      "name": "Esprit Ruffle Shirt",
-      "id": 18
-    },
-    {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-12.jpg",
-      "price": "18.49$",
-      "name": "Esprit Ruffle Shirt",
-      "id": 19
     }
-    
   ]
 }
