@@ -1,4 +1,6 @@
 const table = document.querySelector("table");
+const formAdd = document.querySelector("form");
+console.log(formAdd);
 
 function getAll() {
   fetch("http://localhost:3000/posts")
@@ -7,11 +9,6 @@ function getAll() {
       data.forEach((element) => {
         console.log(element);
 
-
-        // if(element.gender=="woman"){
-        // createCart(element);
-
-        // }
         createCart(element);
       });
     });
@@ -20,7 +17,7 @@ function getAll() {
 function createCart(element) {
   const tr = document.createElement("tr");
   const ID = document.createElement("td");
-  const gender = document.createElement("td");
+  const type = document.createElement("td");
   const productImg = document.createElement("td");
   const img = document.createElement("img");
   const producName = document.createElement("td");
@@ -29,15 +26,14 @@ function createCart(element) {
   const productDelete = document.createElement("td");
   const editbtn = document.createElement("button");
   const deletebtn = document.createElement("button");
-editbtn.classList="edit_delet_btn"
-deletebtn.classList="edit_delet_btn"
-tr.classList="table_tr"
-
+  editbtn.classList = "edit_delet_btn";
+  deletebtn.classList = "edit_delet_btn";
+  tr.classList = "table_tr";
 
   tr.append(
     ID,
     productImg,
-    gender,
+    type,
     producName,
     productPrice,
     productEdit,
@@ -50,9 +46,9 @@ tr.classList="table_tr"
 
   img.src = element.img;
   ID.innerText = element.id;
-  gender.innerText = element.gender;
+  type.innerText = element.type;
   producName.innerText = element.name;
-  productPrice.innerText ="$"+ element.price;
+  productPrice.innerText = "$" + element.price;
   editbtn.innerText = "Edit";
   deletebtn.innerText = "Delete";
 
@@ -70,16 +66,15 @@ tr.classList="table_tr"
       .then((res) => res.json())
       .then((result) => {
         const photo = document.querySelector(".photo");
-        const gender = document.querySelector(".gender");
+        const type = document.querySelector(".type");
         const productName = document.querySelector(".productName");
         const productPrice = document.querySelector(".productPrice");
         const addBtn = document.querySelector(".addBtn");
 
         photo.value = element.img;
-        gender.value = element.gender;
+        type.value = element.type;
         productName.value = element.name;
         productPrice.value = element.price;
-        // element.id=
 
         table.innerHTML = "";
         getAll();
@@ -90,7 +85,7 @@ tr.classList="table_tr"
 
 function addProduct() {
   const photo = document.querySelector(".photo");
-  const gender = document.querySelector(".gender");
+  const type = document.querySelector(".type");
   const productName = document.querySelector(".productName");
   const productPrice = document.querySelector(".productPrice");
   const addBtn = document.querySelector(".addBtn");
@@ -107,7 +102,7 @@ function addProduct() {
       body: JSON.stringify({
         img: photo.value,
         price: productPrice.value,
-        gender: gender.value,
+        type: type.value,
         name: productName.value,
       }),
       cache: "default",
@@ -117,6 +112,10 @@ function addProduct() {
         console.log(data);
 
         table.innerHTML = "";
+        photo.value=""
+        productPrice.value=""
+        type.value=""
+        productName.value=""
         getAll();
       });
   };

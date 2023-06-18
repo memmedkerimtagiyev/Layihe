@@ -1,74 +1,95 @@
 {
   "posts": [
     {
-      "id": 2,
-      "gender": "women",
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-01.jpg",
-      "name": "Esprit Ruffle Shirt",
-      "price": "16.64"
-    },
-    {
-      "id": 3,
-      "gender": "women",
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-02.jpg",
-      "name": "Herschel supply",
-      "price": "35.31"
-    },
-    {
-      "id": 4,
-      "gender": "men",
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-03.jpg",
-      "name": "Only Check Trouser",
-      "price": "25.50"
-    },
-    {
-      "id": 5,
-      "gender": "women",
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-04.jpg",
-      "name": "Classic Trench Coat",
-      "price": "75.00"
-    },
-    {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-05.jpg",
-      "price": "20",
-      "gender": "women",
-      "name": "Front Pocket Jumper",
-      "id": 6
-    },
-    {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-03.jpg",
       "price": "12.00",
-      "gender": "men",
+      "type": "men",
       "name": "Only Check Trouser",
       "id": 9
     },
     {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-11.jpg",
       "price": "63.16",
-      "gender": "men",
+      "type": "men",
       "name": "Herschel supply",
       "id": 10
     },
     {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-12.jpg",
       "price": "63.00",
-      "gender": "men",
+      "type": "men",
       "name": "Herschel supply",
       "id": 11
     },
     {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-06.jpg",
-      "price": "25.00",
-      "gender": "",
-      "name": "Vintage Inspired Classic",
-      "id": 12
-    },
-    {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-16.jpg",
       "price": "18.49",
-      "gender": "women",
+      "type": "women",
       "name": "Square Neck Back",
       "id": 13
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-14.jpg",
+      "price": "30.54",
+      "type": "women",
+      "name": "Pretty Little Thing",
+      "id": 16
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-09.jpg",
+      "price": "75.00",
+      "type": "shoes",
+      "name": "Converse All Star Hi Plimsolls",
+      "id": 17
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-15.jpg",
+      "price": "25.50",
+      "type": "watche",
+      "name": "Mini Silver Mesh Watch",
+      "id": 18
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-06.jpg",
+      "price": "25.00",
+      "type": "watche",
+      "name": "Vintage Inspired Classic",
+      "id": 19
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-08.jpg",
+      "price": "15.43",
+      "type": "women",
+      "name": "Pieces Metallic Printed",
+      "id": 20
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-07.jpg",
+      "price": "54.54",
+      "type": "women",
+      "name": "Shirt in Stretch Cotton",
+      "id": 21
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-05.jpg",
+      "price": "20",
+      "type": "women",
+      "name": "Front Pocket Jumper",
+      "id": 22
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-02.jpg",
+      "price": "35.31",
+      "type": "women",
+      "name": "Herschel supply",
+      "id": 23
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-01.jpg",
+      "price": "16.64",
+      "type": "women",
+      "name": "Esprit Ruffle Shirt",
+      "id": 24
     }
   ]
 }

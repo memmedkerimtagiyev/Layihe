@@ -44,7 +44,15 @@ wishlistArr.forEach((element) => {
   if (wishlistArr.find((x) => x.id == element.id) !== undefined) {
     wishlistBtn.style.color = "red";
   }
-
+  // basket
+  basketBtn.onclick = function () {
+    //eger bu idli elemnent yoxdursa push et
+    if (basketArr.find((x) => x.id == element.id) === undefined) {
+      basketArr.push({ ...element, count: 1 });
+    }
+    localStorage.setItem("basket", JSON.stringify(basketArr));
+    console.table(basketArr);
+  };
   wishlistBtn.onclick = () => {
     console.log(element.id);
     wishlistArr = wishlistArr.filter((x) => x.id !== element.id);

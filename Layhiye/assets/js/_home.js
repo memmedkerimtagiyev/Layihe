@@ -1,7 +1,7 @@
 const productAllCart = document.querySelector(".productAllCart");
+const shopping_number = document.querySelector(".shopping-number");
 let basketArr = [];
 let wishlistArr = [];
-
 function getAll() {
   fetch("http://localhost:3000/posts")
     .then((res) => res.json())
@@ -54,7 +54,7 @@ function createCart(element) {
   block2txtChild2.classList.add("block2-txt-child2");
   block2txtChild1link.classList.add("block2-txt-child1-link");
   block2txtChild1price.classList.add("block2-txt-child1-price");
-  basketBtn.classList.add("basketBtn")
+  basketBtn.classList.add("basketBtn");
   wishlistBtn.classList.add("wishlistBtn");
   wishlistBtn.innerHTML = `<i class="fa-solid fa-heart"></i>`;
   basketBtn.innerHTML = `<i class="fa-solid fa-cart-shopping"></i>`;
@@ -90,11 +90,25 @@ function createCart(element) {
 }
 
 getAll();
-$(".your-class").slick();
+// $(".your-class").slick();
 
 // woman yaradiriq
+const all_product = document.querySelector(".all-btn");
 const women = document.querySelector(".women-btn");
 const men = document.querySelector(".men-btn");
+const bag = document.querySelector(".bag-btn");
+const shoes=document.querySelector(".shoes-btn");
+const watche = document.querySelector(".watche-btn");
+all_product.addEventListener("click", function () {
+  fetch("http://localhost:3000/posts")
+    .then((res) => res.json())
+    .then((data) => {
+      productAllCart.innerHTML = "";
+      data.forEach((element) => {
+        createCart(element);
+      });
+    });
+});
 
 women.addEventListener("click", function () {
   console.log("salam");
@@ -104,7 +118,7 @@ women.addEventListener("click", function () {
     .then((data) => {
       productAllCart.innerHTML = "";
       data.forEach((element) => {
-        if (element.gender == "women") {
+        if (element.type == "women") {
           createCart(element);
         }
       });
@@ -117,7 +131,46 @@ men.addEventListener("click", function () {
     .then((data) => {
       productAllCart.innerHTML = "";
       data.forEach((element) => {
-        if (element.gender == "men") {
+        if (element.type == "men") {
+          createCart(element);
+        }
+      });
+    });
+});
+
+bag.addEventListener("click", function () {
+  fetch("http://localhost:3000/posts")
+    .then((res) => res.json())
+    .then((data) => {
+      productAllCart.innerHTML = "";
+      data.forEach((element) => {
+        if (element.type == "bag") {
+          createCart(element);
+        }
+      });
+    });
+});
+
+shoes.addEventListener("click", function () {
+  fetch("http://localhost:3000/posts")
+    .then((res) => res.json())
+    .then((data) => {
+      productAllCart.innerHTML = "";
+      data.forEach((element) => {
+        if (element.type == "shoes") {
+          createCart(element);
+        }
+      });
+    });
+});
+
+watche.addEventListener("click", function () {
+  fetch("http://localhost:3000/posts")
+    .then((res) => res.json())
+    .then((data) => {
+      productAllCart.innerHTML = "";
+      data.forEach((element) => {
+        if (element.type == "watche") {
           createCart(element);
         }
       });

@@ -1,10 +1,14 @@
-#wishlist{
-    .container{
+#wishlist {
+    padding-top: 100px;
+
+    .container {
         .productAllCart {
             padding: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
 
             .productCart {
-                max-width: 25%;
+                width: 370px;
                 //  border: solid;
                 padding: 20px 15px;
 
@@ -77,12 +81,21 @@
                                 transition: all 0.4s;
                                 font-size: 25px;
 
-                                
+
                             }
 
                         }
                     }
                 }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    #wishlist{
+        .container{
+            .productAllCart{
+                justify-content: center;
             }
         }
     }

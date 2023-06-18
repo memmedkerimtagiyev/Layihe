@@ -3,8 +3,8 @@ const totals = document.querySelector(".totals");
 const product_total = document.createElement("td");
 console.log(product_total);
 let basketArr = [];
-
 basketArr = JSON.parse(localStorage.getItem("basket"));
+
 
 basketArr.forEach((element) => {
   const table_row = document.createElement("tr");

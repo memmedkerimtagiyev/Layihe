@@ -23,13 +23,7 @@
     justify-content: center;
 }
 
-#slide {
-    .your-class {
-        button {
-            display: none !important;
-        }
-    }
-}
+
 
 #banner {
     padding: 100px 0;
@@ -45,10 +39,10 @@
                 // height: 300px; 
                 position: relative;
                 border: 1px solid #e6e6e6;
+                overflow: hidden;
 
-                &:hover {
-                    background-color: rgba(103, 117, 214, 0.8);
-                    border: 2px solid red;
+                &:hover img {
+                    transform: scale(1.1);
                 }
 
                 img {
@@ -57,6 +51,8 @@
                     border-style: none;
                     overflow: clip;
                     position: center center;
+                    transition: all 0.5s;
+
                 }
 
                 .block-text {
@@ -152,9 +148,12 @@
 
         .productAllCart {
             padding: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+           // justify-content: center;
 
             .productCart {
-                max-width: 25%;
+                width: 370px;
                 //  border: solid;
                 padding: 20px 15px;
 
@@ -207,7 +206,7 @@
 
                             .basketBtn {
                                 display: inline-block;
-                                padding: 10px;
+                                padding: 10px 10px 10px 0;
                                 color: #666;
                                 transition: all 0.4s;
                                 font-size: 25px;
@@ -222,7 +221,7 @@
 
                             .wishlistBtn {
                                 display: inline-block;
-                                padding: 10px;
+                                padding: 10px 0 10px 10px;
                                 color: #666;
                                 transition: all 0.4s;
                                 font-size: 25px;
@@ -257,6 +256,25 @@
                     background-color: black;
                     color: white;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #banner {
+        .container {
+            .bannerBlocks {
+                justify-content: center;
+                gap: 30px;
+            }
+        }
+    }
+    #ProductOverview{
+        .container{
+            .productAllCart{
+                justify-content: center;
             }
         }
     }

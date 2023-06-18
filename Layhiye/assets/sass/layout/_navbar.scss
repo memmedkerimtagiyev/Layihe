@@ -1,217 +1,170 @@
-header {
-    .top-bar {
-        background-color: #222;
-        border: 1px solid rgba(255, 255, 255, 0.3);
+.sticky {
+    background-color: white;
+}
 
-        .content-topbar {
-            height: 40px;
+nav {
+    box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    transition: all 0.3s;
 
+    .container {
 
-            .left-top-bar {
-                font-family: 'Poppins', sans-serif;
-                font-size: 12px;
-                line-height: 1.8;
-                color: #b2b2b2;
+        .nav-left {
+
+            .logo {
+                margin-right: 50px;
+
+                img {
+                    width: 130%;
+                }
             }
 
-            .right-top-bar {
+            .menu-desktop {
+
                 display: flex;
 
+                .main-menu {
+                    display: flex;
+                    align-items: center;
 
-                a {
-                    border-left: 1px solid rgba(255, 255, 255, 0.3);
-                    font-family: 'Poppins', sans-serif;
-                    font-size: 12px;
-                    line-height: 1.8;
-                    height: 100%;
-                    color: #b2b2b2;
-                    padding: 10px 25px;
-                    border-right: 1px solid rgba(255, 255, 255, 0.3);
-                }
-            }
-        }
-    }
+                    margin: 0;
 
-    nav {
-        box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.2);
-        height: 75px;
+                    .active-menu {
 
-        .container {
+                        &:hover .sub-menu {
+                            opacity: 1;
+                        }
 
-            .nav-left {
-                .logo {
-                    margin-right: 50px;
-                }
-
-                .menu-desktop {
-
-                    .main-menu {
-                        display: flex;
-                        align-items: center;
-
-                        .active-menu {
-
-                            &:hover .sub-menu {
-                                opacity: 1;
-                            }
-
-                            .sub-menu {
-                                position: absolute;
-                                z-index: 2;
-                                list-style-type: none;
-                                min-width: 178px;
-                                max-width: 225px;
-                                background-color: #fff;
-                                padding: 5px 0;
-                                transition: all 0.4s;
-                                opacity: 0;
-                                box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+                        .sub-menu {
+                            position: absolute;
+                            z-index: 2;
+                            list-style-type: none;
+                            min-width: 178px;
+                            max-width: 225px;
+                            background-color: #fff;
+                            padding: 5px 0;
+                            transition: all 0.4s;
+                            opacity: 0;
+                            box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
 
 
 
 
-                                li {
-                                    padding: 0;
-                                    margin: 0;
+                            li {
+                                padding: 0;
+                                margin: 0;
 
-                                    a {
-                                        font-family: 'Poppins', sans-serif;
-                                        font-size: 14px;
-                                        line-height: 1.5;
-                                        color: #555;
-                                        display: block;
-                                        padding: 8px 20px;
-                                        width: 100%;
-                                        transition: all 0.4s;
+                                a {
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 16px;
+                                    line-height: 1.5;
+                                    color: #555;
+                                    display: block;
+                                    padding: 8px 20px;
+                                    width: 100%;
+                                    transition: all 0.4s;
 
 
-                                        &:hover {
-                                            color: #6c7ae0;
-                                        }
+                                    &:hover {
+                                        color: #6c7ae0;
                                     }
                                 }
                             }
                         }
+                    }
 
-                        li {
-                            padding: 20px 10px 20px 0px;
-                            margin: 0px 4px 0px 14px;
+                    li {
+                        padding: 30px 10px 30px 0px;
+                        margin: 0px 4px 0px 14px;
 
-                            a {
-                                font-family: 'Poppins', sans-serif;
-                                font-size: 14px;
-                                color: #333;
-                                padding: 5px 0px;
-                                transition: all 0.4s;
+                        a {
 
-                                &:hover {
-                                    color: #6c7ae0;
-                                }
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 16px;
+                            color: #333;
+                            padding: 5px 0px;
+                            transition: all 0.4s;
+
+                            &:hover {
+                                color: #6c7ae0;
                             }
                         }
                     }
                 }
             }
+        }
 
-            .icon-header {
-                display: flex;
-                align-items: center;
-                gap: 40px;
+        .icon-header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
 
-                .icon-header-item {
-                    position: relative;
-                    font-size: 26px;
-                    line-height: 1;
-                    cursor: pointer;
-                    color: #333;
+            .icon-header-item {
+                position: relative;
+                font-size: 26px;
+                line-height: 1;
+                cursor: pointer;
+                color: #333;
 
-                    &:hover {
-                        color: #717fe0;
-                    }
+                &:hover {
+                    color: #717fe0;
+                }
 
-                    .shopping-number {
-                        content: attr(data-notify);
-                        font-family: 'Poppins', sans-serif;
-                        font-size: 12px;
-                        color: #fff;
-                        line-height: 15px;
-                        text-align: center;
-                        display: block;
-                        position: absolute;
-                        top: -7px;
-                        right: -10px;
-                        min-width: 15px;
-                        height: 15px;
-                        padding: 0 3px;
-                        background-color: #717fe0;
-                    }
+                .shopping-number {
+                    content: attr(data-notify);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 15px;
+                    text-align: center;
+                    display: block;
+                    position: absolute;
+                    top: -7px;
+                    right: -10px;
+                    min-width: 15px;
+                    height: 15px;
+                    padding: 0 3px;
+                    background-color: #717fe0;
+                }
 
-                    .heart-number {
-                        content: attr(data-notify);
-                        font-family: 'Poppins', sans-serif;
-                        font-size: 12px;
-                        color: #fff;
-                        line-height: 15px;
-                        text-align: center;
-                        display: block;
-                        position: absolute;
-                        top: -7px;
-                        right: -10px;
-                        min-width: 15px;
-                        height: 15px;
-                        padding: 0 3px;
-                        background-color: #717fe0;
-                    }
+                .heart-number {
+                    content: attr(data-notify);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 15px;
+                    text-align: center;
+                    display: block;
+                    position: absolute;
+                    top: -7px;
+                    right: -10px;
+                    min-width: 15px;
+                    height: 15px;
+                    padding: 0 3px;
+                    background-color: #717fe0;
                 }
             }
+        }
 
-            .hamburger {
-                display: none;
-            }
+        .hamburger {
+            display: none;
         }
     }
-
-
 }
 
 .mobile-nav-list {
     display: none;
 
-    .top-bar-mobile {
-        background-color: #222;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-
-        .content-topbar {
-            .left-top-bar {
-                font-size: 13px;
-                line-height: 1.8;
-                color: #b2b2b2;
-            }
-
-            .right-top-bar {
-                display: flex;
-                margin-top: 3px;
-
-                a {
-                    border-left: 1px solid rgba(255, 255, 255, 0.3);
-                    font-family: 'Poppins', sans-serif;
-                    font-size: 12px;
-                    line-height: 1.8;
-                    height: 100%;
-                    color: #b2b2b2;
-                    padding: 4px 10px;
-                    border-right: 1px solid rgba(255, 255, 255, 0.3);
-                }
-            }
-        }
-    }
-
     .nav-mobile {
+        padding-top: 60px;
+
         .menu-desktop {
             .main-menu {
-                padding-top: 10px;
-                padding-bottom: 10px;
                 background-color: #717fe0;
+                margin: 0;
+                padding: 10px 0;
 
                 li {
                     position: relative;
@@ -269,34 +222,36 @@ header {
         width: 100%;
     }
 
+    nav {
+        .container {
+            .nav-left {
+                .menu-desktop {
+                    display: none;
+                }
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+    }
+
+    .mobile-nav-list {
+        display: block;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .dis-b {
+        height: 100%;
+    }
+
     header {
         .top-bar {
             display: none;
         }
 
-        nav {
-            .container {
-                .nav-left {
-                    .menu-desktop {
-                        display: none;
-                    }
-                }
 
-                .hamburger {
-                    display: block;
-                }
-            }
-        }
-
-        .mobile-nav-list {
-            display: block;
-            height: 0px;
-            overflow: hidden;
-        }
-
-        .dis-b {
-            height: 100%;
-        }
     }
 
 }
