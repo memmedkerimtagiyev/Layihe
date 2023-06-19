@@ -19,21 +19,114 @@
 </head>
 
 <body>
+    <nav class="jst-cont">
+        <div class="container jst-cont">
+            <div class="nav-left jst-cont">
+                <a href="#" class="logo">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/icons/logo-01.png" alt="IMG-LOGO" />
+                </a>
 
+                <div class="menu-desktop">
+                    <ul class="main-menu">
+                        <li class="active-menu">
+                            <a href="home.html">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="./home.html">Homepage 1</a></li>
+                                <li><a href="./home.html">Homepage 2</a></li>
+                                <li><a href="./home.html">Homepage 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="product.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="icon-header">
+                <!-- <div class="icon-header-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div> -->
+                <a href="./basket.html" class="icon-header-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="shopping-number">0</div>
+                </a>
+                <a href="./wishlist.html" class="icon-header-item">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="heart-number">0</div>
+                </a>
+                <a href="./log _in.html" class="icon-header-item">
+                    <i class="fa-solid fa-user-plus"></i>
+                </a>
+            </div>
+
+            <button class="hamburger hamburger--emphatic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-list">
+        <div class="nav-mobile">
+            <div class="menu-desktop">
+                <ul class="main-menu">
+                    <li class="active-menu">
+                        <a href="home.html">Home</a>
+                        <i class="fa-solid down fa-chevron-down"></i>
+                        <ul class="sub-menu-mobile">
+                            <li><a href="">Homepage 1</a></li>
+                            <li><a href="">Homepage 2</a></li>
+                            <li><a href="">Homepage 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="product.html">Shop</a>
+                    </li>
+                    <li class="label1" data-label1="hot">
+                        <a href="shoping-cart.html">Features</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <main>
         <h2 class="container">Product All</h2>
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Product Photo</th>
-                <th>Type</th>
-                <th>Product Name</th>
-                <th>Product Price</th>
-                <th>Product Edit</th>
-                <th>Product Delete</th>
-            </tr>
-        </table>
+
+        <section id="table_section">
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Product Photo</th>
+                    <th>Type</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Edit</th>
+                    <th>Product Delete</th>
+                </tr>
+            </table>
+        </section>
 
         <section class="AddProductSection">
             <h3 class="container">Product Add</h3>
@@ -143,6 +236,7 @@
     <script src="./assets/js/_hamburger.js"></script>
     <script src="./assets/js/_home.js"></script>
     <script src="./assets/js/_admin.js"></script>
+    <script src="./assets/js/nav.js"></script>
 </body>
 
 </html>

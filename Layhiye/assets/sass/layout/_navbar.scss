@@ -14,7 +14,7 @@ nav {
         .nav-left {
 
             .logo {
-                margin-right: 50px;
+                margin-right: 70px;
 
                 img {
                     width: 130%;
@@ -158,7 +158,6 @@ nav {
     display: none;
 
     .nav-mobile {
-        padding-top: 60px;
 
         .menu-desktop {
             .main-menu {
@@ -177,15 +176,18 @@ nav {
                         font-weight: 500;
                     }
 
-                    i {
+                    .down {
                         position: absolute;
                         right: 15px;
                         top: 2px;
                         padding: 10px;
                         cursor: pointer;
                         color: #fff;
-                        transform: rotate(-90deg);
                         transition: all 0.5s;
+                    }
+
+                    .down-transition {
+                        transform: rotate(90deg);
                     }
 
                     .sub-menu-mobile {
@@ -207,6 +209,7 @@ nav {
 
                     .sub-menu-open {
                         height: 100pt !important;
+
                     }
                 }
             }
@@ -223,6 +226,8 @@ nav {
     }
 
     nav {
+        position: static;
+
         .container {
             .nav-left {
                 .menu-desktop {
@@ -237,13 +242,16 @@ nav {
     }
 
     .mobile-nav-list {
+        transition: all 0.3s;
         display: block;
         height: 0px;
+        opacity: 0;
         overflow: hidden;
     }
 
     .dis-b {
-        height: 100%;
+        opacity: 1;
+        height: 310px;
     }
 
     header {

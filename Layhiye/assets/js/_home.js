@@ -2,6 +2,7 @@ const productAllCart = document.querySelector(".productAllCart");
 const shopping_number = document.querySelector(".shopping-number");
 let basketArr = [];
 let wishlistArr = [];
+let logArr = [];
 function getAll() {
   fetch("http://localhost:3000/posts")
     .then((res) => res.json())
@@ -17,6 +18,9 @@ function getAll() {
     }
     if (localStorage.getItem("wishlist") !== null) {
       wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
+    }
+    if(localStorage.getItem("login") !== null){
+      logArr=JSON.parse(localStorage.getItem("login"));
     }
   };
 }
@@ -97,8 +101,24 @@ const all_product = document.querySelector(".all-btn");
 const women = document.querySelector(".women-btn");
 const men = document.querySelector(".men-btn");
 const bag = document.querySelector(".bag-btn");
-const shoes=document.querySelector(".shoes-btn");
+const shoes = document.querySelector(".shoes-btn");
 const watche = document.querySelector(".watche-btn");
+const search_input = document.querySelector(".search-input");
+
+search_input.addEventListener("input", function () {
+  const text = search_input.value;
+  fetch("http://localhost:3000/posts")
+    .then((res) => res.json())
+    .then((data) => {
+      productAllCart.innerHTML = "";
+      data.forEach((element) => {
+        if (text === element.type) {
+          createCart(element);
+        }
+      });
+    });
+});
+
 all_product.addEventListener("click", function () {
   fetch("http://localhost:3000/posts")
     .then((res) => res.json())

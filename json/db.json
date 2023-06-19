@@ -1,12 +1,18 @@
 {
-  "posts": [
+  "users": [
+    { "id": 1, "username": "kerim", "password": "1233" },
     {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-03.jpg",
-      "price": "12.00",
-      "type": "men",
-      "name": "Only Check Trouser",
-      "id": 9
+      "id": 2,
+      "username": "mursel",
+      "password": "123456"
     },
+    {
+      "id": 3,
+      "username": "admin",
+      "password": "adminadmin"
+    }
+  ],
+  "posts": [
     {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-11.jpg",
       "price": "63.16",
@@ -71,13 +77,6 @@
       "id": 21
     },
     {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-05.jpg",
-      "price": "20",
-      "type": "women",
-      "name": "Front Pocket Jumper",
-      "id": 22
-    },
-    {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-02.jpg",
       "price": "35.31",
       "type": "women",
@@ -85,11 +84,32 @@
       "id": 23
     },
     {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-03.jpg",
+      "price": "12.00",
+      "type": "men",
+      "name": "Only Check Trouser",
+      "id": 25
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-10.jpg",
+      "price": "$25.85",
+      "type": "women",
+      "name": "Femme T-Shirt In Stripe",
+      "id": 26
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-05.jpg",
+      "price": "20",
+      "type": "women",
+      "name": "Front Pocket Jumper",
+      "id": 27
+    },
+    {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-01.jpg",
       "price": "16.64",
       "type": "women",
       "name": "Esprit Ruffle Shirt",
-      "id": 24
+      "id": 28
     }
   ]
 }

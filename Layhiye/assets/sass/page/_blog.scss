@@ -20,6 +20,7 @@
   .container {
 
     .row {
+      justify-content: center;
       .blog-content-left {
         padding-bottom: 80px;
 
@@ -66,7 +67,7 @@
 
             h4 {
               font-family: inherit;
-              font-size: 30px;
+              font-size: 40px;
               font-weight: 700;
               line-height: 1.1;
               color: inherit;
@@ -78,7 +79,7 @@
             }
 
             p {
-              font-size: 15px;
+              font-size: 20px;
               line-height: 1.666667;
               color: #888;
             }
@@ -87,7 +88,7 @@
               padding-top: 18px;
 
               span {
-                font-size: 13px;
+                font-size: 16px;
                 line-height: 1.6923;
                 color: #333;
               }
@@ -95,7 +96,7 @@
               a {
                 display: block;
                 font-weight: 500;
-                font-size: 15px;
+                font-size: 17px;
                 line-height: 1.466667;
                 text-transform: uppercase;
                 color: #333;
