@@ -7,12 +7,12 @@ const wishlist_number_nav = document.querySelector(".heart-number")
 window.onload = function () {
     if (localStorage.getItem("basket") !== null) {
       basketArr = JSON.parse(localStorage.getItem("basket"));
-      shopping_number_nav.innerText=1+basketArr.length
+      shopping_number_nav.innerText=basketArr.length
       
     }
     if (localStorage.getItem("wishlist") !== null) {
       wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
-      wishlist_number_nav.innerHTML=1+wishlistArr.length
+      wishlist_number_nav.innerHTML=wishlistArr.length
     }
    
   };
