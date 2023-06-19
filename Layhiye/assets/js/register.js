@@ -6,9 +6,6 @@ const inp_reg_password = document.getElementById("inp_reg_password");
 
 const inp_reg_email = document.getElementById("inp_reg_email");
 
-
-
-
 function getUsers() {
   fetch("http://localhost:3000/users")
     .then((res) => res.json())
@@ -38,6 +35,9 @@ inp_register_btn.onclick = (e) => {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
+      inp_reg_user.value = "";
+      inp_reg_password.value = "";
+      inp_reg_email.value = "";
       getUsers();
     });
 };

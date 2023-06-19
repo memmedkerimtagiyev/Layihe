@@ -30,6 +30,18 @@
       "password": "123456",
       "email": "salam@gamil.com",
       "id": 3
+    },
+    {
+      "username": "kerimtagi",
+      "password": "kerimkerim",
+      "email": "salam@gamil.com",
+      "id": 4
+    },
+    {
+      "username": "sadiq",
+      "password": "20145",
+      "email": "salam@gamil.com",
+      "id": 5
     }
   ],
   "posts": [

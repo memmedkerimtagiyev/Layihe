@@ -35,7 +35,10 @@ function getUser() {
       // }
       // localStorage.setItem("login", JSON.stringify(logArr));
       data.forEach((element) => {
-        if(inp_log_user.value==="admin" && inp_log_password==="adminadmin"){
+        if (
+          inp_log_user.value === "admin" &&
+          inp_log_password.value === "adminadmin"
+        ) {
           localStorage.setItem(
             "login",
             JSON.stringify({
@@ -43,9 +46,9 @@ function getUser() {
               password: element.password,
             })
           );
-          window.location.href="admin.html"
-        }
-       else if (
+          window.location.href = "admin.html";
+          return;
+        } else if (
           element.username === inp_log_user.value &&
           element.password === inp_log_password.value
         ) {
@@ -56,16 +59,20 @@ function getUser() {
               password: element.password,
             })
           );
-           
-         window.location.href="home.html"
+
+          window.location.href = "home.html";
+          return;
+        } else {
+          console.log("tapilmadi");
+          window.location.reload();
+          return;
         }
-       
       });
     });
 }
 
 inp_login_btn.addEventListener("click", (e) => {
-  e.preventDefault()
+  e.preventDefault();
   console.log("salam");
   getUser();
 });

@@ -112,10 +112,10 @@ function addProduct() {
         console.log(data);
 
         table.innerHTML = "";
-        photo.value=""
-        productPrice.value=""
-        type.value=""
-        productName.value=""
+        photo.value = "";
+        productPrice.value = "";
+        type.value = "";
+        productName.value = "";
         getAll();
       });
   };

@@ -1,5 +1,7 @@
 const productAllCart = document.querySelector(".productAllCart");
 const shopping_number = document.querySelector(".shopping-number");
+const shopping_number_nav = document.querySelector(".shopping-number")
+const wishlist_number_nav = document.querySelector(".heart-number")
 let basketArr = [];
 let wishlistArr = [];
 let logArr = [];
@@ -15,9 +17,12 @@ function getAll() {
   window.onload = function () {
     if (localStorage.getItem("basket") !== null) {
       basketArr = JSON.parse(localStorage.getItem("basket"));
+      shopping_number_nav.innerText=1+basketArr.length
+      
     }
     if (localStorage.getItem("wishlist") !== null) {
       wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
+      wishlist_number_nav.innerHTML=1+wishlistArr.length
     }
     if(localStorage.getItem("login") !== null){
       logArr=JSON.parse(localStorage.getItem("login"));
@@ -77,6 +82,8 @@ function createCart(element) {
     }
     localStorage.setItem("basket", JSON.stringify(basketArr));
     console.table(basketArr);
+
+    
   };
 
   // wishlist
