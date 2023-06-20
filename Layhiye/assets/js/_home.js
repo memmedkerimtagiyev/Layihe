@@ -84,9 +84,9 @@ function createCart(element) {
     console.log(shopping_number_nav.innerText);
     // console.table(basketArr);
   };
-
+  
   // wishlist
-
+  
   wishlistBtn.onclick = () => {
     if (wishlistArr.find((x) => x.id == element.id) === undefined) {
       wishlistArr.push(element);
@@ -100,6 +100,7 @@ function createCart(element) {
   };
 }
 
+getAll();
 // woman yaradiriq
 const all_product = document.querySelector(".all-btn");
 const women = document.querySelector(".women-btn");
@@ -201,4 +202,3 @@ watche.addEventListener("click", function () {
     });
 });
 
-getAll();

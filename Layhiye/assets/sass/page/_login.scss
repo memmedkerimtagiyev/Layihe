@@ -36,9 +36,10 @@ main {
                         font-size: 13px;
                         font-weight: bold;
                         cursor: pointer;
-transition: all 0.5s;
+                        transition: all 0.5s;
                     }
-                    .active{
+
+                    .active {
                         color: white;
                     }
 
@@ -84,6 +85,12 @@ transition: all 0.5s;
                         font-weight: 600;
                         margin: auto;
                         outline: none;
+                    }
+
+                    .isNot{
+                        margin-top: 10px;
+                        text-align: center;
+                        color: red;
                     }
 
                     a {

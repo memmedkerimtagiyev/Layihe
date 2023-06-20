@@ -2067,6 +2067,11 @@ main .container #login_section .form_box .input_group .submit_btn {
   margin: auto;
   outline: none;
 }
+main .container #login_section .form_box .input_group .isNot {
+  margin-top: 10px;
+  text-align: center;
+  color: red;
+}
 main .container #login_section .form_box .input_group a {
   color: #777;
   margin: 30px 10px 30px 0;

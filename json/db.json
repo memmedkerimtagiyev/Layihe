@@ -17,16 +17,15 @@
       "password": "1234",
       "email": "salam@gamil.com",
       "id": 8
+    },
+    {
+      "username": "sevda",
+      "password": "1234",
+      "email": "salam@gamil.com",
+      "id": 9
     }
   ],
   "posts": [
-    {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-11.jpg",
-      "price": "63.16",
-      "type": "men",
-      "name": "Herschel supply",
-      "id": 10
-    },
     {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-12.jpg",
       "price": "63.00",
@@ -61,13 +60,6 @@
       "type": "watche",
       "name": "Vintage Inspired Classic",
       "id": 19
-    },
-    {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-08.jpg",
-      "price": "15.43",
-      "type": "women",
-      "name": "Pieces Metallic Printed",
-      "id": 20
     },
     {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-07.jpg",
@@ -117,6 +109,20 @@
       "type": "watche",
       "name": "Mini Silver Mesh Watch",
       "id": 31
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-08.jpg",
+      "price": "15.43",
+      "type": "women",
+      "name": "Pieces Metallic Printed",
+      "id": 32
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-11.jpg",
+      "price": "12.05",
+      "type": "Herschel supply",
+      "name": "men",
+      "id": 33
     }
   ]
 }

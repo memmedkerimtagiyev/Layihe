@@ -64,6 +64,8 @@ function getUser() {
         }
          else {
           console.log("tapilmadi");
+          const isNot=document.querySelector(".isNot")
+          isNot.innerHTML="User not found"
           return;
         }
       });
