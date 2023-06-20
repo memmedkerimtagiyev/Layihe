@@ -4,16 +4,14 @@ const productAllCart = document.querySelector(".productAllCart");
 let wishlistArr = [];
 wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
 
-window.onload = function () {
-  if (localStorage.getItem("basket") !== null) {
+
     basketArr = JSON.parse(localStorage.getItem("basket"));
     shopping_number_nav.innerText = basketArr.length;
-  }
-  if (localStorage.getItem("wishlist") !== null) {
+ 
     wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
     wishlist_number_nav.innerHTML = wishlistArr.length;
-  }
-};
+
+
 wishlistArr.forEach((element) => {
   const productCart = document.createElement("div");
   const block2 = document.createElement("div");
@@ -73,4 +71,5 @@ wishlistArr.forEach((element) => {
     wishlist_number_nav.innerHTML = wishlistArr.length;
     wishlistBtn.parentElement.parentElement.parentElement.remove();
   };
+
 });

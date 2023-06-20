@@ -72,7 +72,7 @@ function createCart(element) {
   block2txtChild1price.innerText = "$" + element.price;
 
   if (wishlistArr.find((x) => x.id == element.id) !== undefined) {
-    wishlistBtn.style.color = "red";
+    wishlistBtn.style.color = "red  !important";
   }
   // basket
   basketBtn.onclick = function () {
@@ -93,10 +93,10 @@ function createCart(element) {
   wishlistBtn.onclick = () => {
     if (wishlistArr.find((x) => x.id == element.id) === undefined) {
       wishlistArr.push(element);
-      wishlistBtn.style.color = "red";
+      wishlistBtn.style.color = "red !important";
     } else {
       wishlistArr = wishlistArr.filter((x) => x.id !== element.id);
-      wishlistBtn.style.color = "#666";
+      // wishlistBtn.style.color = "#666";
     }
     localStorage.setItem("wishlist", JSON.stringify(wishlistArr));
     wishlist_number_nav.innerHTML=wishlistArr.length
