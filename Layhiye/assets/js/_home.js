@@ -1,7 +1,7 @@
 const productAllCart = document.querySelector(".productAllCart");
 // const shopping_number = document.querySelector(".shopping-number");
-const shopping_number_nav = document.querySelector(".shopping-number")
-const wishlist_number_nav = document.querySelector(".heart-number")
+const shopping_number_nav = document.querySelector(".shopping-number");
+const wishlist_number_nav = document.querySelector(".heart-number");
 let basketArr = [];
 let wishlistArr = [];
 let logArr = [];
@@ -13,19 +13,18 @@ function getAll() {
         createCart(element);
       });
     });
-
+  wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
   window.onload = function () {
     if (localStorage.getItem("basket") !== null) {
       basketArr = JSON.parse(localStorage.getItem("basket"));
-      shopping_number_nav.innerText=basketArr.length
-      
+      shopping_number_nav.innerText = basketArr.length;
     }
     if (localStorage.getItem("wishlist") !== null) {
       wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
-      wishlist_number_nav.innerHTML=wishlistArr.length
+      wishlist_number_nav.innerHTML = wishlistArr.length;
     }
-    if(localStorage.getItem("login") !== null){
-      logArr=JSON.parse(localStorage.getItem("login"));
+    if (localStorage.getItem("login") !== null) {
+      logArr = JSON.parse(localStorage.getItem("login"));
     }
   };
 }
@@ -72,7 +71,7 @@ function createCart(element) {
   block2txtChild1price.innerText = "$" + element.price;
 
   if (wishlistArr.find((x) => x.id == element.id) !== undefined) {
-    wishlistBtn.style.color = "red  !important";
+    wishlistBtn.style.color = "red";
   }
   // basket
   basketBtn.onclick = function () {
@@ -81,11 +80,9 @@ function createCart(element) {
       basketArr.push({ ...element, count: 1 });
     }
     localStorage.setItem("basket", JSON.stringify(basketArr));
-    shopping_number_nav.innerText=basketArr.length
+    shopping_number_nav.innerText = basketArr.length;
     console.log(shopping_number_nav.innerText);
     // console.table(basketArr);
-
-    
   };
 
   // wishlist
@@ -93,18 +90,15 @@ function createCart(element) {
   wishlistBtn.onclick = () => {
     if (wishlistArr.find((x) => x.id == element.id) === undefined) {
       wishlistArr.push(element);
-      wishlistBtn.style.color = "red !important";
+      wishlistBtn.style.color = "red";
     } else {
       wishlistArr = wishlistArr.filter((x) => x.id !== element.id);
-      // wishlistBtn.style.color = "#666";
+      wishlistBtn.style.color = "#666";
     }
     localStorage.setItem("wishlist", JSON.stringify(wishlistArr));
-    wishlist_number_nav.innerHTML=wishlistArr.length
+    wishlist_number_nav.innerHTML = wishlistArr.length;
   };
 }
-
-getAll();
-// $(".your-class").slick();
 
 // woman yaradiriq
 const all_product = document.querySelector(".all-btn");
@@ -125,7 +119,6 @@ search_input.addEventListener("input", function () {
         if (text === element.type) {
           createCart(element);
         }
-        
       });
     });
 });
@@ -207,3 +200,5 @@ watche.addEventListener("click", function () {
       });
     });
 });
+
+getAll();

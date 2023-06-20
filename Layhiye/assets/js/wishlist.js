@@ -2,15 +2,11 @@ const shopping_number_nav = document.querySelector(".shopping-number");
 const wishlist_number_nav = document.querySelector(".heart-number");
 const productAllCart = document.querySelector(".productAllCart");
 let wishlistArr = [];
+basketArr = JSON.parse(localStorage.getItem("basket"));
+shopping_number_nav.innerText = basketArr.length;
+
 wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
-
-
-    basketArr = JSON.parse(localStorage.getItem("basket"));
-    shopping_number_nav.innerText = basketArr.length;
- 
-    wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
-    wishlist_number_nav.innerHTML = wishlistArr.length;
-
+wishlist_number_nav.innerHTML = wishlistArr.length;
 
 wishlistArr.forEach((element) => {
   const productCart = document.createElement("div");
@@ -71,5 +67,4 @@ wishlistArr.forEach((element) => {
     wishlist_number_nav.innerHTML = wishlistArr.length;
     wishlistBtn.parentElement.parentElement.parentElement.remove();
   };
-
 });
