@@ -124,18 +124,18 @@
       "id": 32
     },
     {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-11.jpg",
-      "price": "12.05",
-      "type": "Herschel supply",
-      "name": "men",
-      "id": 33
-    },
-    {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-13.jpg",
       "price": "18.95",
       "type": "women",
       "name": "T-Shirt with Sleeve",
       "id": 34
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-11.jpg",
+      "price": "12.05",
+      "type": "men",
+      "name": "Herschel supply",
+      "id": 35
     }
   ]
 }

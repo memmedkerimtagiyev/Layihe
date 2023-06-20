@@ -17,9 +17,6 @@ function getUsers() {
 inp_register_btn.onclick = (e) => {
   e.preventDefault();
 
-  console.log("salam");
-  console.log(inp_reg_user.value);
-
   fetch("http://localhost:3000/users", {
     method: "POST",
     headers: {

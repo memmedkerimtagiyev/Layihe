@@ -6,7 +6,9 @@ window.addEventListener("scroll", function () {
 const login_link = document.querySelector(".login_link");
 
 if (localStorage.getItem("login")) {
+
   login_link.innerHTML = "";
+
   const username = JSON.parse(localStorage.getItem("login")).username;
 
   const log_out = document.createElement("div");
