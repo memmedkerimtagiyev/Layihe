@@ -1,5 +1,5 @@
 const productAllCart = document.querySelector(".productAllCart");
-const shopping_number = document.querySelector(".shopping-number");
+// const shopping_number = document.querySelector(".shopping-number");
 const shopping_number_nav = document.querySelector(".shopping-number")
 const wishlist_number_nav = document.querySelector(".heart-number")
 let basketArr = [];
@@ -81,7 +81,9 @@ function createCart(element) {
       basketArr.push({ ...element, count: 1 });
     }
     localStorage.setItem("basket", JSON.stringify(basketArr));
-    console.table(basketArr);
+    shopping_number_nav.innerText=basketArr.length
+    console.log(shopping_number_nav.innerText);
+    // console.table(basketArr);
 
     
   };
@@ -97,6 +99,7 @@ function createCart(element) {
       wishlistBtn.style.color = "#666";
     }
     localStorage.setItem("wishlist", JSON.stringify(wishlistArr));
+    wishlist_number_nav.innerHTML=wishlistArr.length
   };
 }
 
@@ -122,6 +125,7 @@ search_input.addEventListener("input", function () {
         if (text === element.type) {
           createCart(element);
         }
+        
       });
     });
 });

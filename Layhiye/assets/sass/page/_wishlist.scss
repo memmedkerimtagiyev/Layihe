@@ -61,9 +61,9 @@
 
                             .basketBtn {
                                 display: inline-block;
-                                padding: 10px;
+                                padding: 10px 10px 10px 0;
                                 color: #666;
-                                transition: all 0.4s;
+                                transition: all 0.3s;
                                 font-size: 25px;
 
                                 &:hover {
@@ -76,12 +76,14 @@
 
                             .wishlistBtn {
                                 display: inline-block;
-                                padding: 10px;
+                                padding: 10px 0 10px 10px;
                                 color: #666;
-                                transition: all 0.4s;
+                                transition: all 0.3s;
                                 font-size: 25px;
 
-
+                                &:hover {
+                                    color: red;
+                                }
                             }
 
                         }

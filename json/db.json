@@ -1,47 +1,22 @@
 {
   "users": [
     {
-      "id": 1,
+      "username": "samir",
+      "password": "samirsamir",
+      "email": "salam@gamil.com",
+      "id": 6
+    },
+    {
       "username": "kerim",
-      "password": "1233"
-    },
-    {
-      "id": 2,
-      "username": "mursel",
-      "password": "123456"
-    },
-    {
-      "id": 2,
-      "username": "mursel",
-      "password": "123456"
-    },
-    {
-      "id": 2,
-      "username": "mursel",
-      "password": "123456"
-    },
-    {
-      "id": 2,
-      "username": "mursel",
-      "password": "123456"
-    },
-    {
-      "username": "erwerf",
-      "password": "123456",
+      "password": "1234",
       "email": "salam@gamil.com",
-      "id": 3
+      "id": 7
     },
     {
-      "username": "kerimtagi",
-      "password": "kerimkerim",
+      "username": "faiq",
+      "password": "1234",
       "email": "salam@gamil.com",
-      "id": 4
-    },
-    {
-      "username": "sadiq",
-      "password": "20145",
-      "email": "salam@gamil.com",
-      "id": 5
+      "id": 8
     }
   ],
   "posts": [
@@ -79,13 +54,6 @@
       "type": "shoes",
       "name": "Converse All Star Hi Plimsolls",
       "id": 17
-    },
-    {
-      "img": "https://preview.colorlib.com/theme/cozastore/images/product-15.jpg",
-      "price": "25.50",
-      "type": "watche",
-      "name": "Mini Silver Mesh Watch",
-      "id": 18
     },
     {
       "img": "https://preview.colorlib.com/theme/cozastore/images/product-06.jpg",
@@ -141,7 +109,14 @@
       "price": "16.64",
       "type": "women",
       "name": "Esprit Ruffle Shirt",
-      "id": 28
+      "id": 30
+    },
+    {
+      "img": "https://preview.colorlib.com/theme/cozastore/images/product-15.jpg",
+      "price": "25.50",
+      "type": "watche",
+      "name": "Mini Silver Mesh Watch",
+      "id": 31
     }
   ]
 }

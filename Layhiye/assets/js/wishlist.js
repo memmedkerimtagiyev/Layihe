@@ -1,7 +1,19 @@
+const shopping_number_nav = document.querySelector(".shopping-number");
+const wishlist_number_nav = document.querySelector(".heart-number");
 const productAllCart = document.querySelector(".productAllCart");
 let wishlistArr = [];
 wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
 
+window.onload = function () {
+  if (localStorage.getItem("basket") !== null) {
+    basketArr = JSON.parse(localStorage.getItem("basket"));
+    shopping_number_nav.innerText = basketArr.length;
+  }
+  if (localStorage.getItem("wishlist") !== null) {
+    wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
+    wishlist_number_nav.innerHTML = wishlistArr.length;
+  }
+};
 wishlistArr.forEach((element) => {
   const productCart = document.createElement("div");
   const block2 = document.createElement("div");
@@ -33,7 +45,7 @@ wishlistArr.forEach((element) => {
   block2txtChild2.classList.add("block2-txt-child2");
   block2txtChild1link.classList.add("block2-txt-child1-link");
   block2txtChild1price.classList.add("block2-txt-child1-price");
-  basketBtn.classList.add("basketBtn")
+  basketBtn.classList.add("basketBtn");
   wishlistBtn.classList.add("wishlistBtn");
   wishlistBtn.innerHTML = `<i class="fa-solid fa-heart"></i>`;
   basketBtn.innerHTML = `<i class="fa-solid fa-cart-shopping"></i>`;
@@ -51,13 +63,14 @@ wishlistArr.forEach((element) => {
       basketArr.push({ ...element, count: 1 });
     }
     localStorage.setItem("basket", JSON.stringify(basketArr));
+    shopping_number_nav.innerText = basketArr.length;
     console.table(basketArr);
   };
   wishlistBtn.onclick = () => {
     console.log(element.id);
     wishlistArr = wishlistArr.filter((x) => x.id !== element.id);
     localStorage.setItem("wishlist", JSON.stringify(wishlistArr));
+    wishlist_number_nav.innerHTML = wishlistArr.length;
     wishlistBtn.parentElement.parentElement.parentElement.remove();
   };
-
 });

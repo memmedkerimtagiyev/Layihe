@@ -5,6 +5,14 @@ console.log(product_total);
 let basketArr = [];
 basketArr = JSON.parse(localStorage.getItem("basket"));
 
+const shopping_number_nav = document.querySelector(".shopping-number");
+const wishlist_number_nav = document.querySelector(".heart-number");
+
+basketArr = JSON.parse(localStorage.getItem("basket"));
+shopping_number_nav.innerText = basketArr.length;
+
+wishlistArr = JSON.parse(localStorage.getItem("wishlist"));
+wishlist_number_nav.innerHTML = wishlistArr.length;
 
 basketArr.forEach((element) => {
   const table_row = document.createElement("tr");
@@ -69,6 +77,7 @@ basketArr.forEach((element) => {
     getTotalAll();
 
     delete_btn.parentElement.parentElement.remove();
+    shopping_number_nav.innerText = basketArr.length;
   };
 
   table_row.append(

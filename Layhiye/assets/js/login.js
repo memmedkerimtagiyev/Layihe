@@ -61,10 +61,9 @@ function getUser() {
           );
 
           window.location.href = "home.html";
-          return;
-        } else {
+        }
+         else {
           console.log("tapilmadi");
-          window.location.reload();
           return;
         }
       });
