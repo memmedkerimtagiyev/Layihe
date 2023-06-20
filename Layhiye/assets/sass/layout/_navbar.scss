@@ -7,7 +7,7 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 3;
-    transition: all 0.3s;
+    transition: all 0.4s;
 
     .container {
 
@@ -183,7 +183,7 @@ nav {
                         padding: 10px;
                         cursor: pointer;
                         color: #fff;
-                        transition: all 0.5s;
+                        transition: all 0.4s;
                     }
 
                     .down-transition {
@@ -195,7 +195,7 @@ nav {
                         height: 0px;
                         //  height: 100%;
                         overflow: hidden;
-                        transition: all 0.5s;
+                        transition: all 0.4s;
 
                         li {
                             a {
@@ -242,16 +242,14 @@ nav {
     }
 
     .mobile-nav-list {
-        transition: all 0.3s;
+        transition: all 0.4s;
         display: block;
         height: 0px;
-        opacity: 0;
         overflow: hidden;
     }
 
     .dis-b {
-        opacity: 1;
-        height: 310px;
+        height: 265px;
     }
     .dis-b2{
         height: 400px;

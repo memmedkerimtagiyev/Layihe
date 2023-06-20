@@ -61,11 +61,11 @@ function getUser() {
           );
 
           window.location.href = "home.html";
-        }
-         else {
+          return;
+        } else {
           console.log("tapilmadi");
-          const isNot=document.querySelector(".isNot")
-          isNot.innerHTML="User not found"
+          const isNot = document.querySelector(".isNot");
+          isNot.innerHTML = "User not found";
           return;
         }
       });

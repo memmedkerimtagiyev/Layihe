@@ -108,7 +108,7 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 3;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 nav .container .nav-left .logo {
   margin-right: 70px;
@@ -246,7 +246,7 @@ nav .container .hamburger {
   padding: 10px;
   cursor: pointer;
   color: #fff;
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 .mobile-nav-list .nav-mobile .menu-desktop .main-menu li .down-transition {
   transform: rotate(90deg);
@@ -255,7 +255,7 @@ nav .container .hamburger {
   background-color: white;
   height: 0px;
   overflow: hidden;
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 .mobile-nav-list .nav-mobile .menu-desktop .main-menu li .sub-menu-mobile li a {
   font-size: 14px;
@@ -282,15 +282,13 @@ nav .container .hamburger {
     display: block;
   }
   .mobile-nav-list {
-    transition: all 0.3s;
+    transition: all 0.4s;
     display: block;
     height: 0px;
-    opacity: 0;
     overflow: hidden;
   }
   .dis-b {
-    opacity: 1;
-    height: 310px;
+    height: 265px;
   }
   .dis-b2 {
     height: 400px;

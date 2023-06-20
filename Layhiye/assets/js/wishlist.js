@@ -66,5 +66,6 @@ wishlistArr.forEach((element) => {
     localStorage.setItem("wishlist", JSON.stringify(wishlistArr));
     wishlist_number_nav.innerHTML = wishlistArr.length;
     wishlistBtn.parentElement.parentElement.parentElement.remove();
+    window.location.reload();
   };
 });
