@@ -15,6 +15,7 @@ console.log(down);
 
 down.onclick = () => {
   subMenu.classList.toggle("sub-menu-open");
+  mobileNavList.classList.toggle("dis-b2")
   console.log("salam");
   down.classList.toggle("down-transition");
 };

@@ -292,6 +292,9 @@ nav .container .hamburger {
     opacity: 1;
     height: 310px;
   }
+  .dis-b2 {
+    height: 400px;
+  }
   header .top-bar {
     display: none;
   }
